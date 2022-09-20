@@ -1,0 +1,154 @@
+/*ОБНУЛЕНИЕ*/
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+/*КОД НАЧИНАЕТСЯ ТУТ*/
+
+body {
+    background-color: #982025; 
+    color: #fff;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*Шапка*/
+
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px  104px 15px;
+    margin-bottom: 97px;
+}    
+.logo {
+    font-weight: 700;
+    font-size: 20px;
+    color: #f5f5dc;
+}
+.nav {
+    font-size: 13px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_link {
+    margin: 0px 20px;
+    color: #f5f5dc;
+    transition: color .2s linear;
+    /*Плавная смена цвета текста*/
+}
+
+.nav_link:hover {
+    color: #fce38a;
+}
+
+/*Интро*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 23vw;
+    border: 2px solid #f5f5dc;
+    border-radius: 10px;
+}
+.title_img {
+    width: 500px;
+    height: 330px; 
+    margin-top: 100px;
+}
+.intro_title {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: arial;
+    text-transform: uppercase;
+    color: #f5f5dc;
+    z-index: 2;
+    position: absolute;
+    margin-top: 240px;
+}
+.search {
+    position: relative;  
+    padding: 10px 20px; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+input[type=search] {
+    width: 15px;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url('CVmedia/search-icon.svg');
+    background-repeat: no-repeat;
+}
+input[type=search]:focus {
+    width: 400px;
+    color: #000;
+    text-align: center; 
+    outline: none;
+    text-transform: uppercase;
+    background-image: none;
+    background-color: #f5f5dc;
+    cursor: auto;
+    border-radius: 10px;
+}
+input[type=search]:focus::placeholder {
+    color: #000;
+    font-size: 15px; 
+}
+.my_stack {
+    display: block;
+    padding: 50px 50px 50px 50px;
+    border-radius: 10px;
+	background-color: #f5f5dc;
+}
+.my_stack_title {
+	font-size: 30px;
+    font-weight: 700;
+    font-family: arial;
+    color: #982025;
+    text-transform: uppercase;
+    text-align: center;
+}
+.my_stack_imgs {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+}
+.HtmlImg, .CssImg,.JavaScriptImg, .SublimeTextImg {
+    width: 40px;
+    height: 40px;
+    box-shadow: 2px 2px 3px black;
+}
+
+.ReactImg, .ReduxImg, .FigmaImg {
+    width: 70px;
+    height: 40px;
+    box-shadow: 2px 2px 3px black;
+}
+
