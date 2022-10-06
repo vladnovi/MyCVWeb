@@ -41,29 +41,30 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px  104px 15px;
-    margin-bottom: 97px;
+    margin-bottom: 57px;
 }    
 .logo {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 15px;
     color: #f5f5dc;
 }
 .nav {
     font-size: 13px;
     text-transform: uppercase;
     display: flex;
-    justify-content: space-between;
 }
 
 .nav_link {
-    margin: 0px 20px;
+    margin-left: 20px;
     color: #f5f5dc;
     transition: color .2s linear;
-    /*Плавная смена цвета текста*/
+    padding-bottom: 5px;
 }
 
 .nav_link:hover {
-    color: #fce38a;
+    font-size: 15px;
+    padding-bottom: 0;
+    margin-left: 10px;
 }
 
 /*Интро*/
@@ -72,7 +73,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 23vw;
+    margin-bottom: 16vw;
     border: 2px solid #f5f5dc;
     border-radius: 10px;
 }
@@ -134,21 +135,10 @@ input[type=search]:focus::placeholder {
     text-align: center;
 }
 .my_stack_imgs {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
     padding-left: 15px;
     padding-right: 15px;
     margin-top: 30px;
 }
-.HtmlImg, .CssImg,.JavaScriptImg, .SublimeTextImg {
-    width: 40px;
-    height: 40px;
-    box-shadow: 2px 2px 3px black;
-}
 
-.ReactImg, .ReduxImg, .FigmaImg {
-    width: 70px;
-    height: 40px;
-    box-shadow: 2px 2px 3px black;
-}
 
